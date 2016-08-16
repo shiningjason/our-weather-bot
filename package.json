@@ -4,5 +4,9 @@
   "description": "Telegram bot for HK weather forecast.",
   "scripts": {},
   "author": "Jason Chung <shiningjason1989@gmail.com> https://github.com/shiningjason1989",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
+  }
 }
