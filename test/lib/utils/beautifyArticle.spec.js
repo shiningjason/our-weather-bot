@@ -12,5 +12,14 @@ describe('utils', () => {
 
       expect(actual).to.equal(expected);
     });
+
+    it('should trim internal whitespace between english words', () => {
+      const input = 'hello   hi  world';
+      const expected = 'hello hi world';
+
+      const actual = beautifyArticle(input);
+
+      expect(actual).to.equal(expected);
+    });
   });
 });
