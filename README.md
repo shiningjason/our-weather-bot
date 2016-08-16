@@ -20,9 +20,9 @@
 
 ## Technology stack
 
-Server: AWS Lambda
-DB: DynamoDB
-Framework: Serverless framework
+Server: AWS Lambda  
+DB: DynamoDB  
+Framework: Serverless framework  
 Libraries: node-fetch
 
 ## Notes
