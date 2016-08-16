@@ -5,7 +5,7 @@
 - [ ] Beautify weather content
   - [x] Strip leading and trailing whitespaces
   - [x] Trim internal whitespaces between english words
-  - [ ] Trim internal whitespaces between english word and number
+  - [x] Trim internal whitespaces between english word and number
   - [ ] Trim internal whitespaces between chinese characters
   - [ ] Preserve one space after chinese character which is followed by english
   - [ ] Preserve one space after chinese character which is followed by number

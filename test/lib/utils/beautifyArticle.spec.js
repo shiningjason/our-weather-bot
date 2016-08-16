@@ -21,5 +21,14 @@ describe('utils', () => {
 
       expect(actual).to.equal(expected);
     });
+
+    it('should trim internal whitespace between english word and number', () => {
+      const input = 'I\'m   25 years old';
+      const expected = 'I\'m 25 years old';
+
+      const actual = beautifyArticle(input);
+
+      expect(actual).to.equal(expected);
+    });
   });
 });
