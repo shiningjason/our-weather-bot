@@ -2,8 +2,21 @@
 
 ## Todos
 
-- [ ] Pull current weather report RSS
-- [ ] Pull weather warning info RSS
+- [ ] Schedule to pull current weather report RSS
+  - [ ] Query weather data model last pulled from DB
+  - [ ] Fetch EN report
+  - [ ] Check EN report is up to date, then jump out of lambda
+  - [ ] Fetch TC report
+  - [ ] Fetch SC report
+  - [ ] Parse XML and return weather data model (content, date)
+    - [ ] Parse XML description and format weather content
+    - [ ] Parse XML publish date and return unix timestamp (ms)
+    - [ ] Format TC content
+    - [ ] Format SC content
+    - [ ] Format EN content
+  - [ ] Save weather data model to DB
+  - [ ] Schedule to run lambda funciton
+- [ ] Schedule to pull weather warning info RSS
 - [ ] Notify new current weather report to subscribers
 - [ ] Notify new weather warning info to subscribers
 - [ ] Add telegram webhook to listen user's commands
