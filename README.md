@@ -2,6 +2,20 @@
 
 ## Todos
 
+- [ ] Beautify weather content
+  - [ ] Strip leading and trailing whitespaces
+  - [ ] Trim internal whitespaces between english words
+  - [ ] Trim internal whitespaces between english word and number
+  - [ ] Trim internal whitespaces between chinese characters
+  - [ ] Preserve one space after chinese character which is followed by english
+  - [ ] Preserve one space after chinese character which is followed by number
+  - [ ] Preserve one space after english word which is followed by chinese
+  - [ ] Preserve one space after number which is followed by chinese
+  - [ ] Strip whitespaces before and after `：`
+  - [ ] Strip whitespaces before `:`
+  - [ ] Trim whitespaces after `:`
+  - [ ] Strip whitespaces before `.`
+  - [ ] Trim whitespaces after `.`
 - [ ] Schedule to pull current weather report RSS
   - [ ] Query weather data model last pulled from DB
   - [ ] Fetch EN report
@@ -9,11 +23,8 @@
   - [ ] Fetch TC report
   - [ ] Fetch SC report
   - [ ] Parse XML and return weather data model (content, date)
-    - [ ] Parse XML description and format weather content
+    - [ ] Parse XML description and beautify weather content
     - [ ] Parse XML publish date and return unix timestamp (ms)
-    - [ ] Format TC content
-    - [ ] Format SC content
-    - [ ] Format EN content
   - [ ] Save weather data model to DB
   - [ ] Schedule to run lambda funciton
 - [ ] Schedule to pull weather warning info RSS
