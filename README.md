@@ -12,9 +12,8 @@
   - [x] Preserve one space after english word which is followed by chinese
   - [x] Preserve one space after number which is followed by chinese
   - [x] Strip whitespaces before and after fullwith symbols like `：`
-  - [ ] Strip whitespaces before `:`
+  - [ ] Strip whitespaces before halfwidth symbols like `:` and `.`
   - [ ] Trim whitespaces after `:`
-  - [ ] Strip whitespaces before `.`
   - [ ] Trim whitespaces after `.`
 - [ ] Schedule to pull current weather report RSS
   - [ ] Query weather data model last pulled from DB
