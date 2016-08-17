@@ -147,5 +147,14 @@ describe('utils', () => {
 
       expect(actual).to.equal(expected);
     });
+
+    it('should strip whitespaces before the line', () => {
+      const input = 'At 4p.m.\n  at the Hong Kong';
+      const expected = 'At 4p.m.\nat the Hong Kong';
+
+      const actual = beautifyArticle(input);
+
+      expect(actual).to.equal(expected);
+    });
   });
 });

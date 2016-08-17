@@ -15,6 +15,7 @@
   - [x] Strip whitespaces before halfwidth symbols like `:` and `.`
   - [x] Trim whitespaces after halfwidth symbols like `:` and `.`
   - [x] Strip whitespaces before line breaks
+  - [ ] Strip whitespaces before the line
 - [ ] Schedule to pull current weather report RSS
   - [ ] Query weather data model last pulled from DB
   - [ ] Fetch EN report
