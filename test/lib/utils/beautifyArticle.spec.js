@@ -14,8 +14,8 @@ describe('utils', () => {
     });
 
     it('should trim internal whitespace between english words', () => {
-      const input = 'hello   hi  world';
-      const expected = 'hello hi world';
+      const input = 'apple  and   orange';
+      const expected = 'apple and orange';
 
       const actual = beautifyArticle(input);
 
@@ -23,7 +23,7 @@ describe('utils', () => {
     });
 
     it('should trim internal whitespace between english word and number', () => {
-      const input = 'I\'m   25 years old';
+      const input = 'I\'m  25   years old';
       const expected = 'I\'m 25 years old';
 
       const actual = beautifyArticle(input);
@@ -32,7 +32,7 @@ describe('utils', () => {
     });
 
     it('should trim internal whitespace between chinese characters', () => {
-      const input = '目 前  天  氣';
+      const input = '目前 天  氣';
       const expected = '目前天氣';
 
       const actual = beautifyArticle(input);
@@ -41,8 +41,8 @@ describe('utils', () => {
     });
 
     it('should preserve one space after chinese character which is followed by english', () => {
-      const input = '天氣sun';
-      const expected = '天氣 sun';
+      const input = '台北rain';
+      const expected = '台北 rain';
 
       const actual = beautifyArticle(input);
 
@@ -50,8 +50,8 @@ describe('utils', () => {
     });
 
     it('should preserve one space after chinese character which is followed by number', () => {
-      const input = '溫度123';
-      const expected = '溫度 123';
+      const input = '溫度32';
+      const expected = '溫度 32';
 
       const actual = beautifyArticle(input);
 
@@ -59,8 +59,8 @@ describe('utils', () => {
     });
 
     it('should preserve one space after english word which is followed by chinese', () => {
-      const input = 'sun晴天';
-      const expected = 'sun 晴天';
+      const input = 'Taipei晴天';
+      const expected = 'Taipei 晴天';
 
       const actual = beautifyArticle(input);
 
