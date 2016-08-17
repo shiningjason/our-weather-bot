@@ -9,7 +9,7 @@
   - [x] Trim internal whitespaces between chinese characters
   - [x] Preserve one space after chinese character which is followed by english
   - [x] Preserve one space after chinese character which is followed by number
-  - [ ] Preserve one space after english word which is followed by chinese
+  - [x] Preserve one space after english word which is followed by chinese
   - [ ] Preserve one space after number which is followed by chinese
   - [ ] Strip whitespaces before and after `：`
   - [ ] Strip whitespaces before `:`
