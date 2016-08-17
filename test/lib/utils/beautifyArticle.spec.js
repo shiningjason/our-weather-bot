@@ -84,5 +84,14 @@ describe('utils', () => {
 
       expect(actual).to.equal(expected);
     });
+
+    it('should preserve one space after english word which is followed by spaces and chinese', () => {
+      const input = 'Taipei  晴天';
+      const expected = 'Taipei 晴天';
+
+      const actual = beautifyArticle(input);
+
+      expect(actual).to.equal(expected);
+    });
   });
 });
