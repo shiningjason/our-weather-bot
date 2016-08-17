@@ -2,20 +2,20 @@
 
 ## Todos
 
-- [ ] Beautify weather content
-  - [x] Strip leading and trailing whitespaces
-  - [x] Trim internal whitespaces between english words
-  - [x] Trim internal whitespaces between english word and number
-  - [x] Trim internal whitespaces between chinese characters
-  - [x] Preserve one space after chinese character which is followed by english
-  - [x] Preserve one space after chinese character which is followed by number
-  - [x] Preserve one space after english word which is followed by chinese
-  - [x] Preserve one space after number which is followed by chinese
-  - [x] Strip whitespaces before and after fullwith symbols like `：`
-  - [x] Strip whitespaces before halfwidth symbols like `:` and `.`
-  - [x] Trim whitespaces after halfwidth symbols like `:` and `.`
-  - [x] Strip whitespaces before line breaks
-  - [x] Strip whitespaces before the line
+- [x] 1. Beautify weather content
+  - [x] 1. Strip leading and trailing whitespaces
+  - [x] 2. Trim internal whitespaces between english words
+  - [x] 3. Trim internal whitespaces between english word and number
+  - [x] 4. Trim internal whitespaces between chinese characters
+  - [x] 5. Preserve one space after chinese character which is followed by english
+  - [x] 6. Preserve one space after chinese character which is followed by number
+  - [x] 7. Preserve one space after english word which is followed by chinese
+  - [x] 8. Preserve one space after number which is followed by chinese
+  - [x] 9. Strip whitespaces before and after fullwith symbols like `：`
+  - [x] 10. Strip whitespaces before halfwidth symbols like `:` and `.`
+  - [x] 11. Trim whitespaces after halfwidth symbols like `:` and `.`
+  - [x] 12. Strip whitespaces before line breaks
+  - [x] 13. Strip whitespaces before the line
 - [ ] Schedule to pull current weather report RSS
   - [ ] Query weather data model last pulled from DB
   - [ ] Fetch EN report
