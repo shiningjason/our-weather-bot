@@ -39,5 +39,14 @@ describe('utils', () => {
 
       expect(actual).to.equal(expected);
     });
+
+    it('should preserve one space after chinese character which is followed by english', () => {
+      const input = '天氣sun';
+      const expected = '天氣 sun';
+
+      const actual = beautifyArticle(input);
+
+      expect(actual).to.equal(expected);
+    });
   });
 });
