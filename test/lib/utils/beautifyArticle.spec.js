@@ -48,5 +48,14 @@ describe('utils', () => {
 
       expect(actual).to.equal(expected);
     });
+
+    it('should preserve one space after chinese character which is followed by number', () => {
+      const input = '溫度123';
+      const expected = '溫度 123';
+
+      const actual = beautifyArticle(input);
+
+      expect(actual).to.equal(expected);
+    });
   });
 });
