@@ -49,6 +49,15 @@ describe('utils', () => {
       expect(actual).to.equal(expected);
     });
 
+    it('should preserve one space after chinese character which is followed by spaces and english', () => {
+      const input = '台北  rain';
+      const expected = '台北 rain';
+
+      const actual = beautifyArticle(input);
+
+      expect(actual).to.equal(expected);
+    });
+
     it('should preserve one space after chinese character which is followed by number', () => {
       const input = '溫度32';
       const expected = '溫度 32';
