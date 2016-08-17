@@ -7,7 +7,7 @@
   - [x] Trim internal whitespaces between english words
   - [x] Trim internal whitespaces between english word and number
   - [x] Trim internal whitespaces between chinese characters
-  - [ ] Preserve one space after chinese character which is followed by english
+  - [x] Preserve one space after chinese character which is followed by english
   - [ ] Preserve one space after chinese character which is followed by number
   - [ ] Preserve one space after english word which is followed by chinese
   - [ ] Preserve one space after number which is followed by chinese
