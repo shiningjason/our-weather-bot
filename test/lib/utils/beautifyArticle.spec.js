@@ -102,5 +102,14 @@ describe('utils', () => {
 
       expect(actual).to.equal(expected);
     });
+
+    it('should preserve one space after number which is followed by space and chinese', () => {
+      const input = '32  晴天';
+      const expected = '32 晴天';
+
+      const actual = beautifyArticle(input);
+
+      expect(actual).to.equal(expected);
+    });
   });
 });
