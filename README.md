@@ -11,7 +11,7 @@
   - [x] Preserve one space after chinese character which is followed by number
   - [x] Preserve one space after english word which is followed by chinese
   - [x] Preserve one space after number which is followed by chinese
-  - [ ] Strip whitespaces before and after fullwith symbols like `：`
+  - [x] Strip whitespaces before and after fullwith symbols like `：`
   - [ ] Strip whitespaces before `:`
   - [ ] Trim whitespaces after `:`
   - [ ] Strip whitespaces before `.`
