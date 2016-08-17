@@ -30,5 +30,14 @@ describe('utils', () => {
 
       expect(actual).to.equal(expected);
     });
+
+    it('should trim internal whitespace between chinese characters', () => {
+      const input = '目 前  天  氣';
+      const expected = '目前天氣';
+
+      const actual = beautifyArticle(input);
+
+      expect(actual).to.equal(expected);
+    });
   });
 });
