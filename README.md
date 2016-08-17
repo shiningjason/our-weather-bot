@@ -13,7 +13,7 @@
   - [x] Preserve one space after number which is followed by chinese
   - [x] Strip whitespaces before and after fullwith symbols like `：`
   - [x] Strip whitespaces before halfwidth symbols like `:` and `.`
-  - [ ] Trim whitespaces after halfwidth symbols like `:` and `.`
+  - [x] Trim whitespaces after halfwidth symbols like `:` and `.`
 - [ ] Schedule to pull current weather report RSS
   - [ ] Query weather data model last pulled from DB
   - [ ] Fetch EN report
