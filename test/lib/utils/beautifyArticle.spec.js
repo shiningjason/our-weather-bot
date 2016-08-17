@@ -57,5 +57,14 @@ describe('utils', () => {
 
       expect(actual).to.equal(expected);
     });
+
+    it('should preserve one space after english word which is followed by chinese', () => {
+      const input = 'sun晴天';
+      const expected = 'sun 晴天';
+
+      const actual = beautifyArticle(input);
+
+      expect(actual).to.equal(expected);
+    });
   });
 });
