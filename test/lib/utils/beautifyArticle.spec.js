@@ -93,5 +93,14 @@ describe('utils', () => {
 
       expect(actual).to.equal(expected);
     });
+
+    it('should preserve one space after number which is followed by chinese', () => {
+      const input = '32晴天';
+      const expected = '32 晴天';
+
+      const actual = beautifyArticle(input);
+
+      expect(actual).to.equal(expected);
+    });
   });
 });
