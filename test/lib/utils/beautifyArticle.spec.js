@@ -111,5 +111,14 @@ describe('utils', () => {
 
       expect(actual).to.equal(expected);
     });
+
+    it('should strip whitespaces before and after fullwith symbols', () => {
+      const input = '台北 ： rain ， 溫度適中';
+      const expected = '台北：rain，溫度適中';
+
+      const actual = beautifyArticle(input);
+
+      expect(actual).to.equal(expected);
+    });
   });
 });
