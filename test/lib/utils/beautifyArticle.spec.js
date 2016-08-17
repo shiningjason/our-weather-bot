@@ -129,5 +129,14 @@ describe('utils', () => {
 
       expect(actual).to.equal(expected);
     });
+
+    it('should trim whitespaces after halfwidth symbols', () => {
+      const input = 'At 4p.m.    at the Hong Kong';
+      const expected = 'At 4p.m. at the Hong Kong';
+
+      const actual = beautifyArticle(input);
+
+      expect(actual).to.equal(expected);
+    });
   });
 });
