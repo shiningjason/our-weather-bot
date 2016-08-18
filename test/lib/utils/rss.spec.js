@@ -27,6 +27,16 @@ describe('utils', () => {
 
         expect(actual).to.equal(expected);
       });
+
+      it('should extract first item description', () => {
+        const expected = `<![CDATA[
+          hello,<br/>world
+        ]]>`;
+
+        const actual = RSS.item(rssSample, 0).description();
+
+        expect(actual).to.equal(expected);
+      });
     });
   });
 });
