@@ -17,7 +17,7 @@
   - [x] 12. Strip whitespaces before line breaks
   - [x] 13. Strip whitespaces before the line
 - [ ] 2. RSS Utils
-  - [ ] 1. Parse first item publish date and return unix timestamp (ms)
+  - [x] 1. Parse first item publish date and return unix timestamp (ms)
   - [ ] 2. Parse first item description
 - [ ] Schedule to pull current weather report RSS
   - [ ] Query weather data model last pulled from DB
