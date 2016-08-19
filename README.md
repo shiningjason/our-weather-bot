@@ -20,7 +20,7 @@
   - [x] 1. Parse first item publish date and return unix timestamp (ms)
   - [x] 2. Parse first item description
 - [ ] 3. Format HTML to text
-  - [ ] 3.1 Replace `\n` to ` `
+  - [x] 3.1 Replace `\n` to ` `
   - [ ] 3.2 Replace `<br/>` to `\n`
   - [ ] 3.3 Replace all `<tag>` to ` `
   - [ ] 3.4 Call beautifyArticle to format text
