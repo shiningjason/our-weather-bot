@@ -12,5 +12,14 @@ describe('utils', () => {
 
       expect(actual).to.equal(expected);
     });
+
+    it('should replace \`<br/>\` to \`\\n\`', () => {
+      const input = 'At 9p.m.<br/>at the Hong Kong';
+      const expected = 'At 9p.m.\nat the Hong Kong';
+
+      const actual = formatHtmlToText(input);
+
+      expect(actual).to.equal(expected);
+    });
   });
 });
