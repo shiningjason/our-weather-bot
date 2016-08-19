@@ -21,5 +21,14 @@ describe('utils', () => {
 
       expect(actual).to.equal(expected);
     });
+
+    it('should replace \`<tag>\` to \` \`', () => {
+      const input = 'At 9p.m.<img src="..." />at the Hong Kong';
+      const expected = 'At 9p.m. at the Hong Kong';
+
+      const actual = formatHtmlToText(input);
+
+      expect(actual).to.equal(expected);
+    });
   });
 });
