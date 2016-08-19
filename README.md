@@ -19,11 +19,11 @@
 - [x] 2. RSS Utils
   - [x] 1. Parse first item publish date and return unix timestamp (ms)
   - [x] 2. Parse first item description
-- [ ] 3. Format HTML to text
+- [x] 3. Format HTML to text
   - [x] 3.1 Replace `\n` to ` `
   - [x] 3.2 Replace `<br/>` to `\n`
   - [x] 3.3 Replace all `<tag>` to ` `
-  - [ ] 3.4 Call beautifyArticle to format text
+  - [x] 3.4 Call beautifyArticle to format text
 - [ ] 4. Schedule to pull current weather report RSS
   - [ ] 4.1 Query last pulled timestamp from DB
   - [ ] 4.2 Fetch EN report
