@@ -22,7 +22,7 @@
 - [ ] 3. Format HTML to text
   - [x] 3.1 Replace `\n` to ` `
   - [x] 3.2 Replace `<br/>` to `\n`
-  - [ ] 3.3 Replace all `<tag>` to ` `
+  - [x] 3.3 Replace all `<tag>` to ` `
   - [ ] 3.4 Call beautifyArticle to format text
 - [ ] 4. Schedule to pull current weather report RSS
   - [ ] 4.1 Query last pulled timestamp from DB
