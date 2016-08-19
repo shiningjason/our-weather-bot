@@ -2,7 +2,7 @@
 
 ## Todos
 
-- [x] 1. Beautify weather content
+- [x] 1. Beautify article
   - [x] 1. Strip leading and trailing whitespaces
   - [x] 2. Trim internal whitespaces between english words
   - [x] 3. Trim internal whitespaces between english word and number
@@ -19,17 +19,22 @@
 - [x] 2. RSS Utils
   - [x] 1. Parse first item publish date and return unix timestamp (ms)
   - [x] 2. Parse first item description
-- [ ] Schedule to pull current weather report RSS
-  - [ ] Query weather data model last pulled from DB
-  - [ ] Fetch EN report
-  - [ ] Check EN report is up to date, then jump out of lambda
-  - [ ] Fetch TC report
-  - [ ] Fetch SC report
-  - [ ] Parse XML and return weather data model (content, date)
-    - [ ] Parse XML description and beautify weather content
-    - [ ] Parse XML publish date and return unix timestamp (ms)
-  - [ ] Save weather data model to DB
-  - [ ] Schedule to run lambda funciton
+- [ ] 3. Format HTML to text
+  - [ ] 3.1 Replace `\n` to ` `
+  - [ ] 3.2 Replace `<br/>` to `\n`
+  - [ ] 3.3 Replace all `<tag>` to ` `
+  - [ ] 3.4 Call beautifyArticle to format text
+- [ ] 4. Schedule to pull current weather report RSS
+  - [ ] 4.1 Query last pulled timestamp from DB
+  - [ ] 4.2 Fetch EN report
+  - [ ] 4.3 Check current weather data is up-to-date, then jump out function
+  - [ ] 4.4 Fetch TC report
+  - [ ] 4.5 Fetch SC report
+  - [ ] 4.6 Parse XML and return weather model (content, timestamp)
+    - [ ] 4.6.1 Parse, format and assign weather info to content property
+    - [ ] 4.6.2 Parse and assign publish date to timestamp property
+  - [ ] 4.7 Save weather model to DB
+  - [ ] 4.8 Schedule to run lambda funciton
 - [ ] Schedule to pull weather warning info RSS
 - [ ] Notify new current weather report to subscribers
 - [ ] Notify new weather warning info to subscribers
