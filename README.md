@@ -55,7 +55,7 @@
 Server: AWS Lambda  
 DB: DynamoDB  
 Framework: Serverless framework  
-Libraries: node-fetch
+Libraries: node-fetch  
 Test: Mocha, Chai
 
 ## Notes
